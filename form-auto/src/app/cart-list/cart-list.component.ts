@@ -9,8 +9,9 @@ export class CartListComponent {
   @Input() colore: HTMLInputElement;
   @Input() porte: HTMLInputElement;
   @Input() cambio: HTMLInputElement;
+  @Input() vettore: any[];
   constructor() {
-   
+      
   }
   ngOnInit(): void {
     
