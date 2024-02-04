@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cart-list',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart-list.component.css']
 })
 export class CartListComponent {
-
+  @Input() colore: HTMLInputElement;
+  @Input() porte: HTMLInputElement;
+  @Input() cambio: HTMLInputElement;
+  constructor() {
+   
+  }
+  ngOnInit(): void {
+    
+  }
 }
