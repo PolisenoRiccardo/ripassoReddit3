@@ -1,9 +1,9 @@
 <form>
   <label for="colore">Colore:</label><br>
-  <input name="colore"><br>
+  <input name="colore" #colore><br>
   <label for="porte">Numero porte:</label><br>
-  <input name="porte"><br>
+  <input name="porte" #porte><br>
   <label for="cambio">Tipo di cambio:</label><br>
-  <input name="cambio"><br>
-  <button>Salva</button>
+  <input name="cambio" #cambio><br>
+  <button (click)="autoStamp(colore, porte, cambio)">Salva</button>
 </form>
